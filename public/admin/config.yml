@@ -36,9 +36,6 @@ collections:
         name: "home"
         file: "content/featured.json"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "body", widget: "markdown", required: false}
-          - {label: "External Link", name: "link", widget: "string", required: false}
           - {
               label: "Artworks", name: "artworks", widget: "list", 
               summary: '{{fields.art}}',
