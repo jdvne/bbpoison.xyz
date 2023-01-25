@@ -56,10 +56,6 @@
     text-align: center;
   }
 
-  .link {
-    text-align: left;
-  }
-
   .link > h2 {
     margin-top: auto;
   }
@@ -73,13 +69,14 @@
   .column_2 {
     column-count: 1;
   }
+
 }
 
 @media (max-width: 550px) {
   #home {
     font-size: 1.1em;
   }
-
+  
   .title {
     font-size: 1.5em;
   }

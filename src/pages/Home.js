@@ -1,5 +1,6 @@
 import Art from '../components/Art'
 import { Link } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
 import home from '../content/pages/home'
 import styles from './Home.module.css'
 
@@ -10,9 +11,9 @@ function Home() {
     <main id={styles.home}>
       <div className={styles.column_1}>
         <h1 className={styles.title}>BBPOISON</h1>
-        <p>
-          {home.bio.substring(0, 300) + '...'}
-        </p>
+        <ReactMarkdown>
+          {home.bio}
+        </ReactMarkdown>
         <Link to='a' className={styles.link}>
           <h2>▸▸ gallery</h2>
         </Link>
