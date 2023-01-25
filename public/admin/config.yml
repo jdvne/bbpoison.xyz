@@ -20,7 +20,7 @@ collections:
     name: "art"
     extension: json
     format: json
-    folder: "content/art"
+    folder: "src/content/art"
     create: true
     slug: "{{slug}}"
     fields:
@@ -34,7 +34,7 @@ collections:
     files: 
       - label: "Home Page"
         name: "home"
-        file: "content/featured/home.json"
+        file: "src/content/featured/home.json"
         fields:
           - {
               label: "Artworks", name: "artworks", widget: "list", 
@@ -54,7 +54,7 @@ collections:
     name: "galleries"
     extension: json
     format: json
-    folder: "content/galleries"
+    folder: "src/content/galleries"
     create: true
     delete: false
     slug: "{{slug}}"
