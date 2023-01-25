@@ -34,7 +34,7 @@ collections:
     files: 
       - label: "Home Page"
         name: "home"
-        file: "content/featured.json"
+        file: "content/featured/home.json"
         fields:
           - {
               label: "Artworks", name: "artworks", widget: "list", 
