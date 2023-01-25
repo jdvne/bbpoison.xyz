@@ -29,7 +29,8 @@ collections:
       - {label: "Description", name: "body", widget: "markdown", required: false}
       - {label: "External Link", name: "link", widget: "string", required: false}
 
-  - name: "featured_galleries"
+  - label: "Featured Galleries"
+    name: "featured_galleries"
     files: 
       - label: "Featured Art"
         name: "featured"
