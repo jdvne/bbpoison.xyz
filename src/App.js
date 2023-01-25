@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route exact path='/' element={<Home />} />
-      <Route exact path='a' element={<All />} />
+      <Route exact path='/a' element={<All />} />
       {/* <Route path='g/:gallery' element={<Gallery />} /> */}
       {/* <Route path='art/:slug' element={<Home />} /> */}
       {/* <Route exact path='404' element={<NotFound />} />
