@@ -33,8 +33,7 @@ collections:
     name: "galleries"
     extension: json
     format: json
-    label: "Art"
-    folder: "content/Galleries"
+    folder: "content/galleries"
     create: true
     delete: false
     slug: "{{slug}}"
