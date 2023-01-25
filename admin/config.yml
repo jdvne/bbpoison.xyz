@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  repo: jdvne/bbpoison.xyz
+  branch: main # Branch to update (optional; defaults to master)
+
+# These lines should *not* be indented
+# publish_mode: editorial_workflow
+
+media_folder: "public/images" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
+
+site_url: https://bbpoison.xyz
+display_url: https://bbpoison.xyz
+
+# logo_url:
+
+
+collections:
+  - label: "Art"
+    name: "art"
+    extension: json
+    format: json
+    folder: "content/art"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown", required: false}
+      - {label: "External Link", name: "link", widget: "string", required: false}
+
+  - label: "Galleries"
+    name: "galleries"
+    extension: json
+    format: json
+    label: "Art"
+    folder: "content/Galleries"
+    create: true
+    delete: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown", required: false}
+      - {label: "External Link", name: "link", widget: "string", required: false}
+      - {
+          label: "Artworks", name: "artworks", widget: "list", 
+          summary: '{{fields.image}}',
+          field: {
+            label: "Art", 
+            name: "art", 
+            widget: "relation",
+            collection: "art",
+            search_fields: ["title", "slug"],
+            value_field: "{{slug}}",
+            display_fields: ["title", "image"]
+          }
+        }
