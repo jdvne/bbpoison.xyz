@@ -1,0 +1,15 @@
+.art {
+  margin-bottom: 10%;
+}
+
+.art > h2 {
+  font-size: 1em;
+}
+
+.image {
+  width: 100%;
+}
+
+.exchange_art {
+  height: 0.7em;
+}

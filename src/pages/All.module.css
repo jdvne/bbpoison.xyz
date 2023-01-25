@@ -5,20 +5,10 @@
   font-family: Menlo, 'Courier New', sans-serif;
   font-size: 2em;
   display: flex;
-}
-
-.column_1 {
+  flex-direction: column;
+  column-count: 3;
   width: 40%;
-  margin: 2.5%;
-  margin-left: 5%;
-}
-
-.column_2 {
-  width: 60%;
-  margin: 2.5%;
-  margin-right: 5%;
-  padding-top: 0.67em;
-  column-count: 2;
+  margin: 2.5% 30%;
 }
 
 .title {
