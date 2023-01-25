@@ -29,11 +29,11 @@ collections:
       - {label: "Description", name: "body", widget: "markdown", required: false}
       - {label: "External Link", name: "link", widget: "string", required: false}
 
-  - label: "Featured Galleries"
-    name: "featured_galleries"
+  - label: "Featured"
+    name: "featured"
     files: 
-      - label: "Featured Art"
-        name: "featured"
+      - label: "Home Page"
+        name: "home"
         file: "content/featured.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
