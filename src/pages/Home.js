@@ -1,6 +1,6 @@
 import Art from '../components/Art'
 import { Link } from 'react-router-dom'
-import home from '../content/featured/home'
+import home from '../content/pages/home'
 import styles from './Home.module.css'
 
 function Home() {
@@ -11,13 +11,7 @@ function Home() {
       <div className={styles.column_1}>
         <h1 className={styles.title}>BBPOISON</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-          nunc eu nisl aliquet, nec aliquet nisl aliquam. Donec euismod, nunc
-          euismod aliquam, nunc nisl aliquam nunc, eu aliquam nisl nisl eu
-        </p>
-        <p>
-          euismod nunc eu nisl aliquet, nec aliquet nisl aliquam. Donec euismod,
-          euismod nunc eu nisl aliquet, nec aliquet nisl aliquam. Donec euismod          
+          {home.bio.substring(0, 300) + '...'}
         </p>
         <Link to='a' className={styles.link}>
           <h2>▸▸ gallery</h2>

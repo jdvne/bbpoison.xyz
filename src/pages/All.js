@@ -1,5 +1,5 @@
 import Art from '../components/Art'
-import home from '../content/featured/home'
+import home from '../content/pages/home'
 import styles from './All.module.css'
 
 function All() {

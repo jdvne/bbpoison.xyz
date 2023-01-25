@@ -29,13 +29,14 @@ collections:
       - {label: "Description", name: "body", widget: "markdown", required: false}
       - {label: "External Link", name: "link", widget: "string", required: false}
 
-  - label: "Featured"
-    name: "featured"
+  - label: "Pages"
+    name: "pages"
     files: 
-      - label: "Home Page"
+      - label: "Home"
         name: "home"
-        file: "src/content/featured/home.json"
+        file: "src/content/pages/home.json"
         fields:
+          - { label: "Bio", name: "bio", widget: "markdown" }
           - {
               label: "Artworks", name: "artworks", widget: "list", 
               summary: '{{fields.art}}',
