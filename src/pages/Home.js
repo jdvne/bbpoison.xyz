@@ -19,6 +19,7 @@ function Home() {
         </Link>
       </div>
       <div className={styles.column_2}>
+        <h1 className={styles.title_mobile}>BBPOISON</h1>
         { art.map(({image, link, title}, index) => (
           <Art key={index} src={image} alt={title} title={title} link={link} />
         ))}

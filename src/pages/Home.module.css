@@ -21,13 +21,14 @@
   column-count: 2;
 }
 
-.title {
+.title, .title_mobile {
   font-family: 'Padaloma', sans-serif;
+  width: 100%;
+  font-size: 2em;
 }
 
-.title > h1 {
-  width: 100%;
-  font-size: 4em;
+.title_mobile {
+  display: none;
 }
 
 .link {
@@ -75,9 +76,19 @@
 @media (max-width: 550px) {
   #home {
     font-size: 1.1em;
+    flex-direction: column-reverse;
+  }
+
+  .column_2 :nth-of-type(1n+2) {
+    display: none;
   }
   
   .title {
+    display: none;
+  }
+  
+  .title_mobile {
     font-size: 1.5em;
+    display: block;
   }
 }
